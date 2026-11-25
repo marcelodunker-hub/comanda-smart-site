@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="COMANDA SMART — sistema de automação comercial para bares, lanchonetes, trailers e restaurantes.">
+<title>COMANDA SMART | Gestão inteligente para seu negócio</title>
+<style>
+:root{--navy:#101b2d;--navy2:#172943;--orange:#ff8a24;--cream:#fffaf4;--ink:#172033;--muted:#687386;--line:#e8eaf0;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,Arial,Helvetica,sans-serif;color:var(--ink);background:#fff;line-height:1.6}
+a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
+header{background:rgba(16,27,45,.97);color:#fff;position:sticky;top:0;z-index:10;border-bottom:1px solid rgba(255,255,255,.1)}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:11px;font-weight:900;letter-spacing:.5px;font-size:19px}.logo{width:39px;height:39px;border-radius:12px;background:var(--orange);display:grid;place-items:center;color:var(--navy);font-weight:1000;font-size:21px}.brand span small{display:block;font-size:9px;letter-spacing:2px;color:#b9c4d4;font-weight:700;margin-top:-3px}.navlinks{display:flex;gap:25px;font-size:13px;color:#e0e6ef}.navlinks a:hover{color:var(--orange)}
+.hero{background:radial-gradient(circle at 80% 30%,#29486a 0,#172943 33%,#101b2d 72%);color:white;padding:92px 0 100px;overflow:hidden}.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:55px}.eyebrow{color:#ffb36e;text-transform:uppercase;letter-spacing:2.4px;font-size:11px;font-weight:800}.hero h1{font-size:clamp(38px,5vw,62px);line-height:1.06;margin:17px 0 22px;letter-spacing:-1.8px}.hero h1 em{font-style:normal;color:var(--orange)}.hero p{color:#d0d9e5;font-size:17px;max-width:610px;margin:0 0 30px}.btn{display:inline-flex;align-items:center;justify-content:center;background:var(--orange);color:#172033;padding:14px 22px;border-radius:9px;font-weight:850;font-size:14px;box-shadow:0 8px 24px #0003}.btn:hover{transform:translateY(-1px);filter:brightness(1.04)}.hero-note{font-size:12px;color:#aab7c8;margin-top:18px}.mock{background:#f8fafc;border:7px solid #31445c;border-radius:24px;padding:19px;color:#18253a;box-shadow:0 25px 70px #0007;transform:rotate(2deg)}.mock-top{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #e5e9ef;padding-bottom:13px;font-size:12px;font-weight:800}.live{color:#13875b;background:#e2f6ec;border-radius:20px;padding:4px 9px;font-size:10px}.mock-title{font-size:20px;font-weight:900;margin:18px 0 12px}.stats{display:grid;grid-template-columns:1fr 1fr;gap:10px}.stat{background:white;border:1px solid #e7ebf1;border-radius:11px;padding:13px}.stat small{color:#7b8798;font-size:10px}.stat b{display:block;font-size:20px;margin-top:3px}.mock-row{display:flex;justify-content:space-between;padding:11px 2px;border-bottom:1px solid #e9edf2;font-size:11px}.mock-row strong{color:#1b8a60}.mock-foot{margin-top:14px;background:#fff0e2;color:#8b4b12;padding:10px;border-radius:9px;font-size:10px}
+section{padding:78px 0}.section-head{text-align:center;max-width:700px;margin:0 auto 42px}.kicker{color:#e87816;font-size:11px;letter-spacing:2px;text-transform:uppercase;font-weight:900}.section-head h2{font-size:clamp(29px,3.5vw,42px);line-height:1.15;margin:12px 0;color:var(--navy);letter-spacing:-.8px}.section-head p{color:var(--muted);margin:0;font-size:15px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{border:1px solid var(--line);border-radius:15px;padding:25px;background:#fff;box-shadow:0 8px 25px #18243a08}.ico{width:45px;height:45px;border-radius:12px;background:#fff0e2;color:#d96b0c;display:grid;place-items:center;font-size:21px;font-weight:900}.card h3{margin:17px 0 7px;font-size:18px;color:var(--navy)}.card p{margin:0;color:var(--muted);font-size:13px}
+.band{background:var(--cream)}.split{display:grid;grid-template-columns:.9fr 1.1fr;gap:55px;align-items:center}.split h2{font-size:38px;line-height:1.15;color:var(--navy);margin:12px 0 17px}.split p{color:var(--muted)}.checklist{display:grid;grid-template-columns:1fr 1fr;gap:13px;margin-top:24px}.check{display:flex;gap:10px;font-size:13px;font-weight:700}.check i{font-style:normal;color:#d96b0c;font-weight:900}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.step{padding:25px 22px;border-radius:14px;background:var(--navy);color:#fff}.num{color:var(--orange);font-size:12px;font-weight:900;letter-spacing:2px}.step h3{margin:9px 0;font-size:18px}.step p{margin:0;color:#c2cede;font-size:13px}
+.pag{background:#f5f7fa}.pagbox{background:white;border:1px solid var(--line);border-radius:18px;padding:34px;display:grid;grid-template-columns:1fr auto;gap:30px;align-items:center}.pagbox h2{margin:0 0 8px;color:var(--navy);font-size:26px}.pagbox p{margin:0;color:var(--muted);font-size:14px;max-width:720px}.tag{display:inline-block;background:#fff0e2;color:#a8530b;padding:7px 11px;border-radius:7px;font-size:11px;font-weight:800;margin-bottom:12px}
+.contact{background:var(--navy);color:white;text-align:center;padding:72px 0}.contact h2{font-size:36px;margin:10px 0}.contact p{color:#c6d0dd;max-width:650px;margin:0 auto 25px}.contact .btn{margin-top:5px}
+footer{background:#0b1422;color:#9eacbf;padding:25px 0;font-size:11px}.foot{display:flex;justify-content:space-between;gap:20px;align-items:center}.foot b{color:#fff;letter-spacing:1px}
+@media(max-width:780px){.nav{height:auto;padding:15px 0;align-items:flex-start}.navlinks{display:none}.hero{padding:65px 0}.hero-grid,.split{grid-template-columns:1fr}.mock{max-width:470px;margin:0 auto}.cards{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr}.pagbox{grid-template-columns:1fr}.checklist{grid-template-columns:1fr 1fr}}
+@media(max-width:480px){.cards{grid-template-columns:1fr}.hero h1{font-size:40px}.foot{display:block}.foot span{display:block;margin-top:8px}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+<a class="brand" href="#inicio"><span class="logo">CS</span><span>COMANDA SMART<small>GESTÃO INTELIGENTE</small></span></a>
+<nav class="navlinks"><a href="#solucoes">Soluções</a><a href="#gestao">Gestão</a><a href="#integracao">Integrações</a><a href="#contato">Contato</a></nav>
+</div></header>
+<main>
+<section class="hero" id="inicio"><div class="wrap hero-grid">
+<div><div class="eyebrow">Automação comercial para alimentação</div><h1>Seu negócio organizado.<br><em>Suas vendas inteligentes.</em></h1>
+<p>O COMANDA SMART é uma solução de automação comercial pensada para bares, lanchonetes, trailers, churrasquinhos e restaurantes que desejam organizar pedidos, vendas e a rotina do estabelecimento.</p>
+<a class="btn" href="#solucoes">Conheça as soluções <span aria-hidden="true">&nbsp;→</span></a>
+<div class="hero-note">Uma plataforma em desenvolvimento contínuo, com foco na operação prática do dia a dia.</div></div>
+<div class="mock" aria-label="Ilustração conceitual de painel de gestão"><div class="mock-top"><span>COMANDA SMART · PAINEL</span><span class="live">● VISÃO GERAL</span></div>
+<div class="mock-title">Resumo da operação</div><div class="stats"><div class="stat"><small>Pedidos</small><b>Gestão</b></div><div class="stat"><small>Caixas</small><b>Controle</b></div><div class="stat"><small>Estoque</small><b>Insumos</b></div><div class="stat"><small>Vendas</small><b>Relatórios</b></div></div>
+<div class="mock-row"><span>Pedidos e comandas</span><strong>Organizados</strong></div><div class="mock-row"><span>Movimentação de caixa</span><strong>Controlada</strong></div><div class="mock-row"><span>Ficha técnica e insumos</span><strong>Integrados</strong></div><div class="mock-foot">Imagem ilustrativa — não representa dados reais de uma operação.</div></div>
+</div></section>
+<section id="solucoes"><div class="wrap"><div class="section-head"><div class="kicker">Uma rotina mais simples</div><h2>Recursos para acompanhar a operação de ponta a ponta</h2><p>Centralize as principais atividades do estabelecimento em uma solução pensada para o ritmo do comércio de alimentação.</p></div>
+<div class="cards">
+<article class="card"><div class="ico">▤</div><h3>Pedidos e comandas</h3><p>Organização dos pedidos, acompanhamento da operação e identificação por senhas e locais de preparo.</p></article>
+<article class="card"><div class="ico">R$</div><h3>Vendas e pagamentos</h3><p>Registro de vendas, diferentes formas de pagamento e acompanhamento dos valores recebidos.</p></article>
+<article class="card"><div class="ico">▣</div><h3>Controle de caixas</h3><p>Abertura, movimentação e fechamento de caixas, com conferência das operações.</p></article>
+<article class="card"><div class="ico">▦</div><h3>Estoque e insumos</h3><p>Controle centralizado de insumos e possibilidade de baixa por ficha técnica dos produtos.</p></article>
+<article class="card"><div class="ico">⌁</div><h3>Impressão de pedidos</h3><p>Estrutura de impressão térmica para apoiar a comunicação entre balcão e áreas de preparo.</p></article>
+<article class="card"><div class="ico">▥</div><h3>Gestão e relatórios</h3><p>Informações para acompanhar vendas, movimentações e a rotina administrativa do negócio.</p></article>
+</div></div></section>
+<section class="band" id="gestao"><div class="wrap split">
+<div><div class="kicker">Feito para a operação real</div><h2>Mais clareza para quem atende, prepara e administra.</h2><p>O COMANDA SMART está sendo desenvolvido com foco em estabelecimentos que precisam de agilidade no atendimento e controle das atividades diárias, inclusive em operações com diferentes pontos de preparo.</p></div>
+<div class="checklist"><div class="check"><i>✓</i><span>Atendimento e pedidos</span></div><div class="check"><i>✓</i><span>Organização por setores</span></div><div class="check"><i>✓</i><span>Movimentação de caixa</span></div><div class="check"><i>✓</i><span>Controle de insumos</span></div><div class="check"><i>✓</i><span>Perfis de acesso</span></div><div class="check"><i>✓</i><span>Impressão de comandas</span></div></div>
+</div></section>
+<section><div class="wrap"><div class="section-head"><div class="kicker">Evolução planejada</div><h2>Uma plataforma que evolui junto com o negócio</h2><p>O desenvolvimento prioriza segurança operacional, preservação dos dados e integração gradual de novos recursos.</p></div>
+<div class="steps"><article class="step"><div class="num">01 · OPERAÇÃO</div><h3>Organizar o atendimento</h3><p>Pedidos, comandas, setores de preparo e acompanhamento das vendas.</p></article><article class="step"><div class="num">02 · CONTROLE</div><h3>Conferir a gestão</h3><p>Caixas, estoque de insumos, permissões e informações da operação.</p></article><article class="step"><div class="num">03 · INTEGRAÇÃO</div><h3>Conectar pagamentos</h3><p>Buscar integrações oficiais com meios de pagamento, conforme requisitos e homologação dos parceiros.</p></article></div>
+</div></section>
+<section class="pag" id="integracao"><div class="wrap"><div class="pagbox"><div><span class="tag">INTEGRAÇÃO EM AVALIAÇÃO</span><h2>Conexão com soluções de pagamento</h2><p>Estamos buscando orientação e parceria técnica para avaliar a integração oficial com o ecossistema PagBank, incluindo pagamentos por débito, crédito e Pix em equipamentos compatíveis. A integração depende de aprovação técnica, SDK e homologação do parceiro.</p></div><div class="logo" style="width:62px;height:62px;font-size:27px;border-radius:17px">CS</div></div></div></section>
+<section class="contact" id="contato"><div class="wrap"><div class="eyebrow">COMANDA SMART</div><h2>Gestão inteligente para o seu negócio.</h2><p>Uma solução em desenvolvimento para tornar a rotina de bares, lanchonetes, trailers e restaurantes mais organizada.</p><a class="btn" href="#inicio">Voltar ao início ↑</a></div></section>
+</main>
+<footer><div class="wrap foot"><b>COMANDA SMART</b><span>Apresentação institucional · Informações sujeitas à evolução do produto.</span><span>© 2026 COMANDA SMART</span></div></footer>
+</body></html>
